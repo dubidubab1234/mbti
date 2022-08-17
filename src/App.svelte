@@ -26,6 +26,7 @@
 
 	let resultString = ""
 	function endMbti(){
+		resultString = ""
 		if(results.length>=questions.length){
 			for (let i=0; i <= results.length; i++){
 				if(results[i] in result){
@@ -46,6 +47,8 @@
 </script>
 
 {#if !start}
+	<div class="result" style="font-size: 60px; height: 70px; " >여름방학🍦</div>
+	<div class="result" style="margin:0;" >MBTI</div>
 	<button class="button-54" on:click={()=>{start=true}}>시작하기</button>
 {/if}
 
